@@ -1,6 +1,6 @@
 const http = require('http'); // Импорт модуля http для создания веб-сервера
 const url = require('url'); // Импорт модуля url для парсинга URL и query-параметров
-const port = process.env.PORT || 3000; // Определение порта, на котором будет работать сервер
+const port = 3000; // Определение порта, на котором будет работать сервер
 
 // Создание HTTP-сервера с обработчиком запросов
 const server = http.createServer((req, res) => {
@@ -64,3 +64,4 @@ server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 
 });
+
